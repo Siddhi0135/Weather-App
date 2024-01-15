@@ -1,7 +1,4 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
 import { useState } from 'react'
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
 const [ location, setlocation] = useState("")
@@ -25,7 +22,7 @@ const getWeather = async()=>{
           img: data.current.condition.icon
         }
         setWeather(<>
-        <div className='text-center text-2xl p-2'>{api_data.city}</div>
+        <div className='text-center text-3xl p-2'>{api_data.city}</div>
               <div className='flex justify-center'>
                 <div className='flow-root'>
                   <div className='float-left'>
